@@ -1,0 +1,204 @@
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+html {
+	font-size: 18px;
+}
+
+/*Start The Project*/
+body {
+	background-color: #fff;
+	height: 100vh;
+	font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+	min-width: 360px;
+	max-width: 720px;
+	display: grid;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	grid-template: auto auto / repeat(2, 50%);
+}
+ /*Result Section*/
+main div.result {
+	grid-area: 1 / 1 / 2 / 2;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-items: center;
+	background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	border-radius: 25px;
+	padding: 10% 15%;
+	height: fit-content;
+}
+main div.result div.result-div span:nth-child(1),
+main div.result h2 {
+	color: #fff;
+	display: block;
+}
+
+main div.result h2 {
+	margin-bottom: 5%;
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+main div.result div.result-div span:nth-child(2),
+main div.result h1,
+p {
+	color: hsl(241, 100%, 89%);
+}
+
+main div.result div.result-div span:nth-child(2) {
+	margin-top: -10px;
+	font-size: 0.8rem;
+}
+
+main div.result h1 {
+	font-size: 1.3rem;
+}
+
+main div.result div.result-div {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin: 10% 0px 10% 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+main div.result div.result-div span:nth-child(1) {
+	font-size: 3rem;
+	font-weight: 800;
+}
+
+/*Summary Section*/
+main div.summary {
+	grid-area: 1 / 2 / 2 / 3;
+	padding: 10% 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+main div.summary h1 {
+	font-size: 1.3rem;
+	color: hsl(224, 30%, 27%);
+}
+
+main div.summary > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 15%;
+	border-radius: 7px;
+	padding: 0px 8px;
+	margin: 8px 0px;
+}
+
+main div.summary > div:nth-child(2) {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);	
+}
+
+main div.summary > div:nth-child(3) {
+    background-color: hsla(39, 100%, 56%, 0.1);	
+    color: hsl(39, 100%, 56%);
+}
+
+main div.summary > div:nth-child(4) {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);	
+}
+
+main div.summary > div:nth-child(5) {
+    background-color: hsla(234, 85%, 45%, 0.1);	
+    color: hsl(234, 85%, 45%);
+}
+
+main div.summary div span:nth-child(1) img {
+	display: inline-block;
+	width: 1rem;
+	transform: translateY(3px);
+	margin-right: 4px;
+}
+
+main div.summary div span:nth-child(2) span:nth-child(1) {
+	font-size: 0.9rem;
+	font-weight: 700;
+	color: hsl(224, 30%, 27%);
+}
+
+main div.summary div span:nth-child(2) span:nth-child(2) {
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: hsl(241, 100%, 89%);
+}
+
+main div.summary a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	width: 100%;
+	background-color: hsl(224, 30%, 27%);
+	padding: 8px;
+	border-radius: 15px;
+	margin-top: 15px;
+}
+
+main div.summary a:hover {
+	background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%)); 
+}
+
+main div.attribution {
+	grid-area: 2 / 1 / 3 / 3;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 740px) {
+	main {
+		grid-template: repeat(3, auto) / 100%;
+	}
+
+	main div.result {
+		grid-area: 1 / 1 / 2 / 2;
+	}
+
+	main div.summary {
+		grid-area: 2 / 1 / 3 / 2;
+	}
+
+	main div.attribution {
+		grid-area: 3 / 1 / 4 / 2;
+	}
+
+	main div.summary > div {
+		padding: 8px;
+	}
+
+	main div.summary {
+		padding: 10% 5%;
+	}
+}
+
+
+
+
+
+
